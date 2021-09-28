@@ -11,6 +11,16 @@
 
 (function() {
 
-  // your code here
+    var play = prompt("Would you like to have some cake?");
+
+    if (play === "Yes")
+    {
+        alert('Congratulations!');
+
+    }
+    else
+    {
+        alert('More cake for me then :p!');
+    } // your code here
 
 })();

@@ -11,6 +11,19 @@
 
 (function() {
 
+    var question = prompt("What is your age?")
+    var question1 = prompt("What is your gender?")
+    var question2 = prompt("In which town do you live?")
+    alert (question + question1 + question2);
+    var result = confirm("Do you confirm that these informations are true?")
+    if (result == true) {
+        alert("Thanks for visiting");
+    }
+    else {
+        alert("Thanks for staying with us");
+    }
+
+
     // your code here
 
 })();
