@@ -10,7 +10,10 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById('run').addEventListener('click', function (){ //Klik functie
+        var randomColor = Math.floor(Math.random()*16777215).toString(16); //Color randomizer (gevonden op het internet)
+        document.body.style.backgroundColor = '#' + randomColor; //body bgcolor instellen. Zeker de hashtag noteren voor de color
+    })
 
-    // your code here
 
 })();

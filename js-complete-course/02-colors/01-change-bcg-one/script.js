@@ -11,6 +11,22 @@
 
 (function() {
 
+    const redButton = document.getElementById('red');
+    const greenButton = document.getElementById('green');
+    const yellowButton = document.getElementById('yellow');
+    const blueButton = document.getElementById('blue');
+redButton.addEventListener("click", redFunction);
+    function redFunction() {
+        document.body.style.backgroundColor = "red";}
+greenButton.addEventListener("click", greenFunction);
+    function greenFunction() {
+        document.body.style.backgroundColor = "green";}
+blueButton.addEventListener("click", blueFunction);
+    function blueFunction() {
+        document.body.style.backgroundColor = "blue";}
+yellowButton.addEventListener("click", yellowFunction);
+    function yellowFunction() {
+        document.body.style.backgroundColor = "yellow";}
     // your code here
 
 })();

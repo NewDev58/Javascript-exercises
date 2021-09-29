@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    //
+    document.getElementById('run').addEventListener('click', function(){ //wachten op de klik van de button
+        let color = document.getElementById('color').value; //color krijgt de waarde die de gebruiker ingeeft in het tekstveld
+        document.body.style.backgroundColor = color; //body achtergrondkleur word gelijk aan color
+    })
+    }
     // your code here
 
 })();
