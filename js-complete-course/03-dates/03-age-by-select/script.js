@@ -10,6 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById ('run').addEventListener('click', function () {
+        const birthDay = document.getElementById('dob-day').value;
+        const birthMonth = document.getElementById('dob-month').value;
+        const birthYear = document.getElementById('dob-year').value;
+
+        function calculate_age(dob) {
+            const diff_ms = Date.now() - dob.getTime();
+            const age_dt = new Date(diff_ms);
+
+            return Math.abs(age_dt.getUTCFullYear() - 1970); /*substract 1970 because the .getTime() method returns*/
+        }
+
+        alert('You are ' + calculate_age(new Date(birthYear, birthMonth, birthDay)) + ' years old.');
+    })
 
     // your code here
 
